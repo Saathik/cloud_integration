@@ -26,12 +26,12 @@ public class ItemResourceIT {
         assertThat(databaseSizeBeforeCreate).isEqualTo(0);
 
         Item item = new Item();
-        item.setId(16);
+        item.setId(1);
         item.setName("Pierre");
         itemRepository.save(item);
 
         List<Item> itemList = itemRepository.findAll();
-        assertThat(itemList.size()).isEqualTo(databaseSizeBeforeCreate+1);
+        assertThat(itemList.size()).isEqualTo(databaseSizeBeforeCreate + 1);
 
     }
 }
