@@ -22,3 +22,6 @@ These additional references should also help you:
 
 * [Gradle Build Scans – insights for your project's build](https://scans.gradle.com#gradle)
 
+.\gradlew bootrun  
+http://localhost:8080/api/items/1
+http://localhost:8080/h2-console
