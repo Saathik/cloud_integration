@@ -25,5 +25,10 @@ These additional references should also help you:
 .\gradlew bootrun  
 .\gradlew build
 .\gradlew test
+.\gradlew bootJar
 http://localhost:8080/api/items/1
 http://localhost:8080/h2-console
+javar -jar server.jar
+docker run -d -p 8080:8080 server
+docker build -t server:latest .
+

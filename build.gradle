@@ -33,3 +33,11 @@ tasks.named('test') {
 wrapper {
 	gradleVersion = '8.4'
 }
+
+tasks.named("bootJar") {
+	launchScript{
+		enabled = true
+	}
+	enabled = true
+	archiveFileName = "server.${archiveExtension.get()}"
+}
